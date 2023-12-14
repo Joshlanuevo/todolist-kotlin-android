@@ -36,6 +36,30 @@
         android:textColor="@android:color/white"
         />
 
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_toEndOf="@id/addTodoBtn"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:onClick="editTodo"
+    />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_toEndOf="@id/editButton"
+        android:layout_marginStart="8dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+    android:onClick="deleteTodo"
+    />
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
